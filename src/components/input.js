@@ -4,6 +4,7 @@ function Input(props) {
     errorName,
     inputName,
     inputType,
+    inputPlaceholder,
     inputValue,
     inputHandler,
   } = props;
@@ -17,7 +18,7 @@ function Input(props) {
           errorName && "border-strawberry-red"
         }`}
         type={inputType}
-        placeholder="e.g. Stephen King"
+        placeholder={inputPlaceholder}
         value={inputValue}
         onChange={inputHandler}
       />

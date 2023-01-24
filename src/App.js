@@ -206,6 +206,7 @@ function App() {
                       errorName={nameError}
                       inputName="name"
                       inputType="text"
+                      inputPlaceholder="e.g. Stephen King"
                       inputValue={name}
                       inputHandler={inputHandler}
                     />
@@ -214,6 +215,7 @@ function App() {
                       errorName={emailError}
                       inputName="email"
                       inputType="email"
+                      inputPlaceholder="e.g. stephenking@lorem.com"
                       inputValue={email}
                       inputHandler={inputHandler}
                     />
@@ -222,6 +224,7 @@ function App() {
                       errorName={phonenumberError}
                       inputName="phonenumber"
                       inputType="text"
+                      inputPlaceholder="e.g. 1234567890"
                       inputValue={phonenumber}
                       inputHandler={inputHandler}
                     />
