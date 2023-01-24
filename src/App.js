@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 
 import images from "./assets/images";
-import AddOn from "./components/addOn";
 
 import Input from "./components/input";
 import Plan from "./components/plan";
+import AddOn from "./components/addOn";
 
 const { sidebarDesktop, arcade, advanced, pro, thankYou } = images;
 
