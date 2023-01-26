@@ -86,8 +86,13 @@ function App() {
   const [nameError, setNameError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [phonenumberError, setPhonenumberError] = useState("");
-  const [selectedPlan, setSelectedPlan] = useState({ name: "", price: 0 });
   const [yearlyPlan, setYearlyPlan] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState({
+    name: plans[0]["planName"],
+    price: yearlyPlan
+      ? plans[0]["yearlyPlanPrice"]
+      : plans[0]["monthlyPlanPrice"],
+  });
   const [selectedAddOns, setSelectedAddOns] = useState([]);
   const [confirm, setConfirm] = useState(false);
   function personalInfoHandler() {
